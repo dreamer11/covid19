@@ -1,4 +1,5 @@
-#This is a tictactoe game
+# This is a tictactoe game.
+# Two player play between them.
 
 board = [0, 1, 2,
          3, 4, 5,
@@ -24,61 +25,7 @@ count_x = 0
 match = True
 
 
-# def match_check(list_check):
-#     # for 0; 3 combinations
-#     if 0 in list_check:
-#         if 1 in list_check:
-#             if 2 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#         if 3 in list_check:
-#             if 6 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#
-#         if 4 in list_check:
-#             if 8 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#
-#     if 1 in list_check:
-#         if 4 in list_check:
-#             if 7 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#
-#     if 2 in list_check:
-#         if 4 in list_check:
-#             if 6 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#         if 5 in list_check:
-#             if 8 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#
-#     if 3 in list_check:
-#         if 4 in list_check:
-#             if 5 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#
-#     if 6 in list_check:
-#         if 7 in list_check:
-#             if 8 in list_check:
-#                 print(list_check)
-#                 print('you win')
-#                 return False
-#     else:
-#         return True
-def match_check(list_check,player_turn):
+def match_check(list_check, player_turn):
     # 1
     if 0 in list_check and 1 in list_check and 2 in list_check:
         print(list_check)
